@@ -42,7 +42,7 @@ class _HomeeState extends State<Homee> {
                 ),
               ),
               Divider(
-                height: 30,
+                height: 50,
                 color: Colors.grey[800],
               ),
               Text(

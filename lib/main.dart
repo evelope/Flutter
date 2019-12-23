@@ -1,8 +1,30 @@
 import 'package:flutter/material.dart';
 import './card.dart';
-import './stful.dart';
+import './list_data.dart';
 
-void main() => runApp(MaterialApp(home: Homee()));
+// ----pppp---------
+import 'pages/Home.dart';
+import 'package:first_app/pages/choose_location.dart';
+import 'package:first_app/pages/loading.dart';
+// ----pppp---------
+
+//import './stful.dart';
+
+//void main() => runApp(MaterialApp(home: Homee()));
+//void main() => runApp(MaterialApp(home: Listdata()));
+
+// ----pppp---------
+void main() => runApp(MaterialApp(
+//  home: Home(),
+initialRoute: "/",
+routes: {
+  "/":(context)=> Loading(),
+  "/home":(context)=> Home(),
+  "/location":(context)=> ChooseLocation()
+},
+
+));
+// ----pppp---------
 
 //stless 无状态 widget  //  stful 有状态 widget
 //class Home extends StatelessWidget {
@@ -17,7 +39,7 @@ void main() => runApp(MaterialApp(home: Homee()));
 //          backgroundColor: Colors.pink[400],
 //        ),
 //        body:
-      // flex 布局
+// flex 布局
 //        Row(
 //          children: <Widget>[
 //            Expanded(
@@ -52,7 +74,6 @@ void main() => runApp(MaterialApp(home: Homee()));
 //
 //          ],
 //        ),
-
 
 // 列
 
@@ -120,12 +141,7 @@ void main() => runApp(MaterialApp(home: Homee()));
 //          ],
 //        ),
 
-
-
-
 //        Padding(padding: EdgeInsets.all(60),child:Text("hellow,padding")),
-
-
 
 //        Container(
 //          child: Text("Hello"),
@@ -136,8 +152,7 @@ void main() => runApp(MaterialApp(home: Homee()));
 //          margin: EdgeInsets.symmetric(vertical: 20, horizontal: 30),
 //        ),
 
-
-        /* Center(
+/* Center(
 
 //          child: IconButton(
 //            icon: Icon(Icons.add_a_photo),
@@ -197,17 +212,10 @@ void main() => runApp(MaterialApp(home: Homee()));
 //  }
 //}
 
-
-
-
-
 // widget: 设计不可变
 // 无状态 widget  image
 
 // 有状态 widget  checkbox
-
-
-
 
 // ============================================================
 //void main() => runApp(MyApp());

@@ -1,0 +1,9 @@
+1. widget 被创建时候执行（一次）
+initState()
+
+2. 构建渲染widget  ｜  一旦使用setState 就会执行 Build()
+build()
+
+3. 一旦删除widget 就触发
+dispose()
+
